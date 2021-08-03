@@ -33,4 +33,3 @@ jobs:
           password: ${{ secrets.FTP_PASS }} # FTP password
           local_folder: . # optional, local path, default is: dist
           pasive: true # optional
-          exclude: '["file-studio/**"]'
