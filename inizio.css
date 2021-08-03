@@ -1,0 +1,16 @@
+@import url('./font.css');
+@import url('./sidebar.css');
+
+.alert-informativo-1 {
+    border: 1px solid rgb(202, 202, 202);
+}
+
+.rainbowLetter {
+    background             : repeating-linear-gradient(45deg, rgb(231, 154, 225), indigo, rgb(60, 135, 221), rgb(49, 158, 49), rgb(247, 234, 62), orange, rgb(236, 42, 42), violet);
+    color                  : transparent;
+    background-size        : 800% 800%;
+    -webkit-background-clip: text;
+    background-clip        : text;
+    -webkit-text-fill-color: transparent;
+    animation              : rainbow 8s ease infinite;
+}

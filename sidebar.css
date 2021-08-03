@@ -1,0 +1,91 @@
+#sidebar {
+
+    border-right: 1px solid rgb(145, 145, 145);
+
+}
+
+.descrizioneSidebar {
+    color: rgb(145, 145, 145);
+}
+
+.sidebarTitleWrapper {
+    border-bottom: 1px solid rgb(145, 145, 145);
+    padding      : 5rem 1rem 1rem 1rem;
+
+}
+
+.sidebarContentWrapper {
+    padding-right: 0.5rem;
+}
+
+
+.sidebarContentWrapper ul * {
+    text-decoration: none;
+    color          : inherit;
+    font-family    : 'Ubuntu Mono', monospace;
+    font-weight    : 600;
+}
+
+.sidebarContentWrapper ul {
+    padding-left: 0.7rem;
+}
+
+.sidebarContentWrapper li {
+    list-style-type: none;
+    padding-top    : 0.8rem;
+}
+
+.sidebarContentWrapper li::before {
+    content: "[ ]";
+}
+
+.sidebarContentWrapper li:hover::before {
+    content: "[#]";
+}
+
+.sidebarContentWrapper .liActive {
+    color          : rgb(167, 167, 167);
+    text-decoration: underline;
+}
+
+.sidebarContentWrapper .liActive::before {
+    content: "[#]";
+}
+
+.sidebarContentWrapper .liActive:hover {
+    text-decoration: none;
+}
+
+.sidebarContentWrapper a {
+    letter-spacing: 1.4px;
+}
+
+.sidebarContentWrapper li:hover {
+    color          : inherit;
+    text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+    /* md */
+
+    #sidebar {
+        visibility: hidden;
+    }
+
+    #topbar {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 992px) {
+    /* md */
+
+
+    #sidebar {
+        visibility: visible;
+    }
+
+    #topbar {
+        visibility: hidden;
+    }
+}
