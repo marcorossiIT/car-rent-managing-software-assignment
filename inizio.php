@@ -52,7 +52,7 @@
                                 <h5><b>1.</b> Attivare javascript</h5>
                                 <p>Ho utilizzato javascript allo scopo di presentazione e comodità di utilizzo, tuttavia al fine di garantire il corretto svolgimento della presentazione si consiglia di attivarlo.</p>
                                 <hr>
-                                <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                                <p class="mb-0"><i>Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</i></p>
                             </div>
                         </div>
                     </div>
