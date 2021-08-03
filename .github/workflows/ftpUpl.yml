@@ -25,21 +25,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: ftp-upload-action
-        # You may pin to the exact commit or the version.
-        # uses: GenieTim/ftp-action@544afdf78dd3edfb5311abead2a781cdfc390f8d
-        uses: GenieTim/ftp-action@v4.0.1
+      - name: FTP Deploy
+        uses: sand4rt/ftp-deployer@v1.3
         with:
-          # FTP host
-          host: ..
-          # FTP user
-          user: ..
-          # FTP password
-          password: ..
-          # Force SSL encryption
-          forceSsl: false # optional, default is false
-          # Local directory
-          localDir: . # optional, default is .
-          # Remote directory
-          remoteDir: . # optional, default is .
-
+          host: ${{ secrets.FTP_URL }} # e.g. ftp.host.com or sftp.host.com (without ftp:// or ftps://)
+          username: ${{ secrets.FTP_USERNAME }} # FTP username
+          password: ${{ secrets.FTP_PASS }} # FTP password
+          local_folder: . # optional, local path, default is: dist
+          pasive: true # optional
