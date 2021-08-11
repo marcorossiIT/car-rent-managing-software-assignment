@@ -21,8 +21,39 @@
 
 <body>
 
+    <nav id="topbar" class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Never expand</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarsExample01" style="">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-md-0">
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </nav>
     <div class="container-fluid">
-        <div class="row gx-2">
+        <div class="row">
             <div class="col-2" id="sidebar">
                 <div id="sidebarTitleWrapper">
 
@@ -38,129 +69,127 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-10">
-                <div class="container">
+            <div class="col-md-10 ps-4">
 
-                    <div class="row">
-                        <div class="col">
-                            <h1>Benvenut<span class="rainbowLetter">ə</span>!</h1>
-                        </div>
+                <div class="row">
+                    <div class="col">
+                        <h1>Benvenut<span class="rainbowLetter">ə</span>!</h1>
                     </div>
-                    <div class="row">
-                        <div class="col-10 offset-1">
-                            <div class="alert alert-light alert-informativo-1" role="alert">
-                                <h4 class="alert-heading">Per favore seguire le istruzioni di seguito</h4>
-                                <h5><b>1.</b> Attivare javascript</h5>
-                                <p>Ho utilizzato javascript allo scopo di presentazione e comodità di utilizzo, tuttavia
-                                    al fine di garantire il corretto svolgimento della presentazione si consiglia di
-                                    attivarlo.</p>
-                                <hr>
-                                <p class="mb-0"><i>Whenever you need to, be sure to use margin utilities to keep things
-                                        nice and tidy.</i></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col">
-
-                            <h2>Assignment</h2>
-                            <h3>Descrizione dell'azienda</h3>
-                            <p>
-                                Una società di noleggio video vuole automatizzare i punti vendita.
-                            </p>
-                            <p>
-                                La società gestisce 8 punti vendita in varie località; in ogni punto vendita lavorano
-                                da 1 a 6 addetti più il responsabile del negozio.<br>La società ha 6 fornitori che dopo
-                                90 giorni di affitto ritirano la merce.
-                            </p>
-                            <p>
-                                Ogni settimana avviene uno scarico dei nuovi video e la restituzione dei video
-                                scaduti.
-                            </p>
-                            <p>
-                                Ogni video è contraddistinto da più attori, un titolo, un regista, la casa
-                                produttrice, la durata in minuti ed un genere.
-                            </p>
-                            <p>
-                                I punti vendita noleggiano i video a giorni interi e le tariffe sono decrescenti
-                                all'aumentare del periodo di noleggio.<br>Il responsabile del punto vendita può
-                                applicare degli sconti ad alcuni clienti fidelizzati, ma la politica degli sconti deve
-                                essere codificata.
-                            </p>
-                            <p>
-                                I clienti dovranno essere rintracciabili e deve essere tenuta traccia del cliente e dei
-                                video che ha in noleggio.<br>Per ogni cliente si dovrà conoscere: nome, cognome,
-                                indirizzo, telefono abitazione, telefono cellulare, indirizzo e-mail e data di
-                                nascita.<br>
-                                Ogni cliente dovrà firmare una liberatoria per la legge sulla privacy e si dovrà
-                                tenere traccia delle coordinate del documento cartaceo corrispondente. Per ogni
-                                cliente si dovrà mantenere uno storico dei noleggi effettuati.
-                            </p>
-                            <p>
-                                Gli addetti saranno caratterizzati da un nome, cognome, matricola.<br>
-                                Ogni addetto riceverà incentivi se supererà certi volumi di vendita.
-                            </p>
-                            <h3 id="operativita">Operazioni dell'azienda (operatività)</h3>
-                            <ul>
-                                <li>
-                                    Carico e Scarico dei video a magazzino con frequenza 1 operazione a
-                                    settimana per punto vendita.
-                                </li>
-                                <li>
-                                    Stampa della ricevuta di attivazione noleggio al cliente e contestuale
-                                    diminuzione dalla disponibilità (frequenza 7000 / gg).
-                                </li>
-                                <li>
-                                    Stampa della ricevuta di termine noleggio al cliente e contestuale aumento
-                                    della disponibilità del titolo (frequenza 7000 / gg).
-                                </li>
-                                <li>
-                                    Ricerca sul catalogo per genere (10.000/gg).
-                                </li>
-                                <li>
-                                    Ricerca sul catalogo per titolo (10.000/gg).
-                                </li>
-                                <li>
-                                    Calcolo incasso giornaliero per punto vendita e per addetto.
-                                    Prenotazione di titoli in uscita da parte dei clienti (500/gg).
-                                </li>
-                                <li>
-                                    Stampa ricevuta di addebito al cliente dei video restituiti in cattivo stato e
-                                    quindi da rimborsare al fornitore.</li>
-                            </ul>
-                            <h3>Obbiettivi dello studente</h3>
-                            <ul>
-                                <li>Cosa si deve realizzare
-
-                                    Definire lo schema concettuale e formalizzare tutti i documenti allegati
-                                </li>
-                                <li>
-                                    Definire lo schema logico e formalizzare tutti i documenti allegati.
-                                </li>
-                                <li>
-                                    Fornire una spiegazione circa le scelte fatte in termini di ristrutturazione schema
-                                    E-R.
-                                </li>
-                                <li>
-                                    Definire un possibile schema fisico.
-                                </li>
-                                <li>
-                                    Implementare con linguaggio php le funzioni descritte nelle slide: <i
-                                        href="#operativita">operatività</i>
-                                    distinguendo gli ambienti operativi per i diversi livelli: responsabile negozio e
-                                    addetto negozio.
-                                </li>
-                                <li>
-                                    Gli script potranno essere resi disponibili via web e dovranno essere inviati per
-                                    posta elettronica al mio indirizzo di email.
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-
                 </div>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <div class="alert alert-light alert-informativo-1" role="alert">
+                            <h4 class="alert-heading">Per favore seguire le istruzioni di seguito</h4>
+                            <h5><b>1.</b> Attivare javascript</h5>
+                            <p>Ho utilizzato javascript allo scopo di presentazione e comodità di utilizzo, tuttavia
+                                al fine di garantire il corretto svolgimento della presentazione si consiglia di
+                                attivarlo.</p>
+                            <hr>
+                            <p class="mb-0"><i>Whenever you need to, be sure to use margin utilities to keep things
+                                    nice and tidy.</i></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+
+                        <h2>Assignment</h2>
+                        <h3>Descrizione dell'azienda</h3>
+                        <p>
+                            Una società di noleggio video vuole automatizzare i punti vendita.
+                        </p>
+                        <p>
+                            La società gestisce 8 punti vendita in varie località; in ogni punto vendita lavorano
+                            da 1 a 6 addetti più il responsabile del negozio.<br>La società ha 6 fornitori che dopo
+                            90 giorni di affitto ritirano la merce.
+                        </p>
+                        <p>
+                            Ogni settimana avviene uno scarico dei nuovi video e la restituzione dei video
+                            scaduti.
+                        </p>
+                        <p>
+                            Ogni video è contraddistinto da più attori, un titolo, un regista, la casa
+                            produttrice, la durata in minuti ed un genere.
+                        </p>
+                        <p>
+                            I punti vendita noleggiano i video a giorni interi e le tariffe sono decrescenti
+                            all'aumentare del periodo di noleggio.<br>Il responsabile del punto vendita può
+                            applicare degli sconti ad alcuni clienti fidelizzati, ma la politica degli sconti deve
+                            essere codificata.
+                        </p>
+                        <p>
+                            I clienti dovranno essere rintracciabili e deve essere tenuta traccia del cliente e dei
+                            video che ha in noleggio.<br>Per ogni cliente si dovrà conoscere: nome, cognome,
+                            indirizzo, telefono abitazione, telefono cellulare, indirizzo e-mail e data di
+                            nascita.<br>
+                            Ogni cliente dovrà firmare una liberatoria per la legge sulla privacy e si dovrà
+                            tenere traccia delle coordinate del documento cartaceo corrispondente. Per ogni
+                            cliente si dovrà mantenere uno storico dei noleggi effettuati.
+                        </p>
+                        <p>
+                            Gli addetti saranno caratterizzati da un nome, cognome, matricola.<br>
+                            Ogni addetto riceverà incentivi se supererà certi volumi di vendita.
+                        </p>
+                        <h3 id="operativita">Operazioni dell'azienda (operatività)</h3>
+                        <ul>
+                            <li>
+                                Carico e Scarico dei video a magazzino con frequenza 1 operazione a
+                                settimana per punto vendita.
+                            </li>
+                            <li>
+                                Stampa della ricevuta di attivazione noleggio al cliente e contestuale
+                                diminuzione dalla disponibilità (frequenza 7000 / gg).
+                            </li>
+                            <li>
+                                Stampa della ricevuta di termine noleggio al cliente e contestuale aumento
+                                della disponibilità del titolo (frequenza 7000 / gg).
+                            </li>
+                            <li>
+                                Ricerca sul catalogo per genere (10.000/gg).
+                            </li>
+                            <li>
+                                Ricerca sul catalogo per titolo (10.000/gg).
+                            </li>
+                            <li>
+                                Calcolo incasso giornaliero per punto vendita e per addetto.
+                                Prenotazione di titoli in uscita da parte dei clienti (500/gg).
+                            </li>
+                            <li>
+                                Stampa ricevuta di addebito al cliente dei video restituiti in cattivo stato e
+                                quindi da rimborsare al fornitore.</li>
+                        </ul>
+                        <h3>Obbiettivi dello studente</h3>
+                        <ul>
+                            <li>Cosa si deve realizzare
+
+                                Definire lo schema concettuale e formalizzare tutti i documenti allegati
+                            </li>
+                            <li>
+                                Definire lo schema logico e formalizzare tutti i documenti allegati.
+                            </li>
+                            <li>
+                                Fornire una spiegazione circa le scelte fatte in termini di ristrutturazione schema
+                                E-R.
+                            </li>
+                            <li>
+                                Definire un possibile schema fisico.
+                            </li>
+                            <li>
+                                Implementare con linguaggio php le funzioni descritte nelle slide: <a
+                                    href="#operativita">operatività</a>
+                                distinguendo gli ambienti operativi per i diversi livelli: responsabile negozio e
+                                addetto negozio.
+                            </li>
+                            <li>
+                                Gli script potranno essere resi disponibili via web e dovranno essere inviati per
+                                posta elettronica al mio indirizzo di email.
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
 
