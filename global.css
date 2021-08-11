@@ -1,6 +1,14 @@
 @import url('./font.css');
 
 a {
-    color: black;
+    color      : black;
     font-weight: bold;
 }
+
+a:hover {
+    color: rgb(58, 58, 58);
+}
+
+/*
+color accent: #f7b900;
+*/
