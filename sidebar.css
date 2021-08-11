@@ -69,11 +69,11 @@
     /* md */
 
     #sidebar {
-        visibility: hidden;
+        display: none;
     }
 
     #topbar {
-        visibility: visible;
+        display: unset;
     }
 }
 
@@ -82,10 +82,10 @@
 
 
     #sidebar {
-        visibility: visible;
+        display: unset;
     }
 
     #topbar {
-        visibility: hidden;
+        display: none;
     }
 }
