@@ -1,0 +1,6 @@
+@import url('./font.css');
+
+a {
+    color: black;
+    font-weight: 500;
+}
